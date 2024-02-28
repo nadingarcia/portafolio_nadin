@@ -139,7 +139,7 @@ input[type="text"] {
   @media (max-width: 768px) {
     p {
         font-size: 1.25rem;
-        width: 90%;
+        width: 100%;
     }
 
     h1 {
