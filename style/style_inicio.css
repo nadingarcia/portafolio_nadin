@@ -135,3 +135,14 @@ input[type="text"] {
   .nome-input {
     color: var(--cor-quinta);
   }
+
+@media (max-width: 768px) {
+    p {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+  }
