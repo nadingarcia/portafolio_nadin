@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #0D0D0D;
+    --cor-secundaria: #176A73;
+    --cor-tercearia: #9BB5BF;
+    --cor-quarta: #202E40;
+    --cor-quinta: #F2F0EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilizando o campo de input */
+input[type="text"] {
+    border: solid 5px var(--cor-tercearia);
+    width: 300px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animando o campo de input */
+  input[type="text"]:focus {
+    transform: scale(1.1);
+    border-color: var(--cor-secundaria);
+  }
+
+  .inicio {
+    animation: animateText 4s infinite alternate;
+  }
+  
+  @keyframes animateText {
+    0% {
+      transform: scale(1);
+      color: var(--cor-secundaria);
+    }
+    50% {
+      transform: scale(1.2);
+      color: var(--cor-tercearia);
+    }
+    100% {
+      transform: scale(1);
+      color: var(--cor-quinta);
+    }
+  }
+
+  .estilo-botao {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quinta);
+    width: 100px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+  }
+
+  .estilo-botao {
+    position: relative;
+    overflow: hidden;
+    animation: brilho 3s infinite;
+  }
+  
+  @keyframes brilho {
+    0% {
+      border: 4px solid transparent;
+      box-shadow: none;
+    }
+    25% {
+      border-top-color: var(--cor-quinta);
+    }
+    50% {
+      border-right-color: var(--cor-quinta);
+    }
+    75% {
+      border-bottom-color: var(--cor-quinta);
+    }
+    100% {
+      border-left-color: var(--cor-quinta);
+    }
+  }
+
+  .oculto {
+    display: none;
+  }
+
+  p {
+    font-size: 36px;
+    color: var(--cor-quinta);
+    width: 800px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+/* Adicione um estilo opcional para o elemento <p> */
+.p-animado {
+    display: none;
+  }
+
+  .nome-input {
+    color: var(--cor-quinta);
+  }
