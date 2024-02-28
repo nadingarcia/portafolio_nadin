@@ -38,7 +38,7 @@ h1 {
 /* Estilizando o campo de input */
 input[type="text"] {
     border: solid 5px var(--cor-tercearia);
-    width: 200px;
+    width: 15rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
