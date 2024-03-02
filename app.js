@@ -41,7 +41,7 @@ function Iniciar() {
   
     mostrarLetras();
 
-    setTimeout(redirecionarPagina, 17000); // Contagem regressiva de 5 segundos
+    setTimeout(redirecionarPagina, 16000); // Contagem regressiva de 5 segundos
     }
 
   function redirecionarPagina() {
