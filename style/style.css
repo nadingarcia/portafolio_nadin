@@ -16,7 +16,6 @@
 .cabecalho_navegador {
     display: flex;
     gap: 5rem;
-    padding: 3% 0 0 15%;
 }
 
 .cabecalho_navegador_link{
