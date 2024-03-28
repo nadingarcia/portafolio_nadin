@@ -181,7 +181,9 @@ h3{
     }
   }
 
-@media (max-width: 1200px) {
+  
+
+@media (max-width: 700px) {
     .container-pai {
         display: flex;
         flex-direction: column-reverse;
@@ -257,4 +259,33 @@ h3{
     .paragrafo-projetos {
         width: 90%;
     }
-}
+
+    .sobreMim {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--cor-primaria);
+            padding: 0.5rem;
+            border-radius:8px;
+            width: 50%;
+            margin: -2rem 0 1rem 25%;
+            background-color: var(--cor-quinta);
+            text-align: center;
+            opacity: 90%;
+            animation: botao-apertar 2s infinite;
+          }
+        
+          @keyframes botao-apertar {
+            0% {
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        
+            50% {
+              box-shadow: 4px 10px 14px 0 rgba(0, 0, 0, 0.5);
+            }
+        
+            100% {
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+            }
+    }
